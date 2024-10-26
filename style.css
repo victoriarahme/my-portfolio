@@ -1,44 +1,81 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
-
+/*I've changed my colors to green*/
 header {
-    background-color: #333;
+    background-color: hsl(133, 30%, 58%);
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/*Styling the navigation bar links:*/
+
 nav ul {
-    list-style: none;
+    list-style: none; /* removes the bullet points from the navigation list*/
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* ensures links are displayed horizontally instead of stacked vertically */
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav ul li a:hover { /* adds an underline effect when the user hovers over the links*/
+    text-decoration: underline;
+}
+
+
+
+/*middle portion with my About me, projects, and contact*/
+
+/*I've adjusted my padding and margin to 40px as it cut off my contact section in Chapter 1*/
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
+    margin: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsl(133, 30%, 58%);
+}
+
+
+h2 {
+    color: hsl(133, 30%, 58%);
 }
 
 footer {
-    background-color: #333;
+    background-color: hsl(133, 30%, 58%);
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+    position: fixed; /*ule fixes it in place.*/
     width: 100%;
+    bottom: 0;
+}
+
+/* Added media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
 }
