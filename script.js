@@ -1,26 +1,23 @@
-
-
-
 $(document).ready(function() {
-$(".showMore a").on("click", function(event) {
-    event.preventDefault();
-    console.log("Show more");
+    // When "Show More" is clicked
+    $(".showMore a").on("click", function(e) {
+        e.preventDefault(); // stops link redirecting
 
-    var $this = $(this); 
-    var $content = $this.closest("section").find(".showLess");
-    var linkText = $this.text().toUpperCase();    
+        var $this = $(this);
+        var $content = $this.closest(".project").find(".showLess");
 
-    if(linkText === "SHOW MORE"){
-        linkText = "Show less";
-        $content.removeClass("showLess").addClass("showMore").slideDown(400);
-    } else {
-        linkText = "Show more";
-        $content.removeClass("showMore").addClass("showLess").slideUp(400);
-    }
+        var linkText = $this.text().toUpperCase();
+    }})
 
-    $this.text(linkText);
-});
+if (linkText === "SHOW MORE") {
+    linkText = "Show less";
+    $content.slideDown(); //to open up my project details 
+} else {
+    linkText = "Show more";
+    $content.slideUp(); //closes project info/details
+}
 
-});
+   
 
-console.log($);
+
+}
