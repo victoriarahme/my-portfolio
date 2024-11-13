@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <h1>Victoria Rahme</h1>
         <nav>
@@ -22,46 +21,68 @@
         </nav>
     </header>
 
-    <!-- About Section -->
+    <!--About me section-->
     <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my portfolio! My name's Victoria. I'm currently a computer programming student at Humber Polytechnic. Ever since I was a teen, I've been very passionate about technology.
             I used to love playing around with html on Tumblr, and spent most of my time obsessed with computers. I graduated with my first diploma in hospitality in 2019 and have worked within
             the industry ever since. After spending quite a few years in the administrative side of things, I started to feel like something was missing. The challenge and problem solving aspect of 
-            Computer programming really appealed to me. This curiousity is what pushed me to make a change. I love any type of work thats engaging and can keep me on my toes - and I think I've found just that!
+            Computer programming really appealed to me. This curiousity is what pushed me to go back to school. I love any type of work thats engaging and can keep me on my toes - and I think I've found just that!
             I have dreams of pursuing a career in front end developement or UX design, and hope to apply my attention to detail to make beautiful web pages. 
             </p>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects  -->
     <section class="projects">
         <h2>My Project gallery</h2>
-        <p>Here are all my projects! In future chapters, I will add my projects here.</p>
     
-        <h3>CSS Project</h3>
-        <button>Show project details</button>
-    
-        <section class="showLess">
-            <p>This is a project I did focusing on CSS and design. The goal was to create a smooth layout while considering user experience.</p>
+        <div class="project" id="project-1">
+            <h3>Project 1: CSS Project</h3>
+            <p>IThis is a project I did focusing on CSS and design. The goal was to create a smooth layout while considering user experience.</p>
+        <!--Show more button-->
+            <button class="show-btn">Show project details</button>
+        <div class="more-content" style="display: none;">
+            <p>In further updates I will add details about my CSS here</p>
+        </div>
+        </div>
+
+        <div class="project" id="project-2">
+            <h3>Project 2: Javascript Project</h3>
+            <p>Project description will go here</p>
+            <!--Show more button-->
+        <button class="show-btn">Show project details</button>
+        <div class="more-content" style="display: none;">
+            <p>In further updates I will add details about my JS project here</p>
+        </div>
+
+        </div>
+
+        <div class="project" id="project-3"></div>
+            <h3>Project 3: Web design Project</h3>
+            <p>Project description will go here</p>
+            <!--Show more button-->
+        <button class="show-btn">Show project details</button>
+        <div class="more-content" style="display: none;">
+            <p>In further updates I will add details about my project that involved Jquery, js and css here</p>
+        </div>
+
+        </div>
         </section>
-    
-        <section class="showMore">
-            <a href="#">Show more</a>
-        </section>
-    </section>
+
+
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <p>In the future, this will be a contact form. For now, this as a placeholder.</p>
     </section>
 
 <br><br>
 
 
-    <!-- Footer Section -->
+    <!-- footer-->
     <footer>
-        <p>&copy; 2024 Victoria Rahme</p>
+        <p> 2024 Victoria Rahme</p>
     </footer>
 
 </body>

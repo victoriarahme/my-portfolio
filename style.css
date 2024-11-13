@@ -62,6 +62,18 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* show more button */
+.showLess {
+    display: none;
+}
+
+.showMore {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /* Added media Queries for Mobile Devices */
 @media only screen and (max-width: 600px) {
