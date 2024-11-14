@@ -1,11 +1,11 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
-/*I've changed my colors to green*/
+
+
 header {
     background-color: hsl(133, 30%, 58%);
     color: white;
@@ -13,15 +13,15 @@ header {
     text-align: center;
 }
 
-/*Styling the navigation bar links:*/
-
+/* Navigation Bar */
 nav ul {
-    list-style: none; /* removes the bullet points from the navigation list*/
+    list-style: none; /* Removes bullet points from list */
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline; /* ensures links are displayed horizontally instead of stacked vertically */
+    display: inline; /* Links in one row */
     margin: 0 10px;
 }
 
@@ -31,15 +31,11 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover { /* adds an underline effect when the user hovers over the links*/
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-
-
-/*middle portion with my About me, projects, and contact*/
-
-/*I've adjusted my padding and margin to 40px as it cut off my contact section in Chapter 1*/
+/* Section Styling */
 section {
     padding: 40px;
     margin: 40px;
@@ -48,34 +44,44 @@ section {
     box-shadow: 0 0 10px hsl(133, 30%, 58%);
 }
 
-
-h2 {
+/* Project Section */
+.projects h3 {
+    font-size: 1.5rem;
     color: hsl(133, 30%, 58%);
+    margin-bottom: 10px;
 }
 
+.showLess {
+    display: none; /* Hide the additional content initially */
+}
+
+.showMore a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: hsl(133, 30%, 58%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.showMore a:hover {
+    background-color: hsl(133, 40%, 60%);
+}
+
+/* Footer Styling */
 footer {
     background-color: hsl(133, 30%, 58%);
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed; /*ule fixes it in place.*/
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
-/* show more button */
-.showLess {
-    display: none;
-}
 
-.showMore {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Added media Queries for Mobile Devices */
+/* Mobile Styling */
 @media only screen and (max-width: 600px) {
     header, footer {
         padding: 10px;
@@ -91,4 +97,9 @@ footer {
         padding: 10px;
         margin: 10px;
     }
+
+    .projects h3 {
+        font-size: 1.2rem;
+    }
 }
+
