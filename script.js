@@ -7,8 +7,8 @@ $(document).ready(function() {
         var $content = $this.closest(".project").find(".showLess");
 
         var linkText = $this.text().toUpperCase();
-    }})
-
+    
+//Togglin here//
 if (linkText === "SHOW MORE") {
     linkText = "Show less";
     $content.slideDown(); //to open up my project details 
@@ -17,7 +17,7 @@ if (linkText === "SHOW MORE") {
     $content.slideUp(); //closes project info/details
 }
 
-   
+        $this.text(linkText);
+    });
+});
 
-
-}
