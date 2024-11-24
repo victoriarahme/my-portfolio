@@ -78,43 +78,33 @@
 
 </section>
 
-<!-- Contact Section -->
 <section id="contact">
-     <h2>Contact Me</h2>
-     <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
-     
-     <div class="links">
-          <!--LinkedIn-->
-          <a href="https://ca.linkedin.com/in/victoria-rahme-3817521a8" target="_blank"
-          class="contact-link">My linkedIn</a>
-          <!--Gmail-->
-          <a href="mailto:vic.rahme@gmail.com" target="_blank"
-          class="contact-link">vic.rahme@gmail.com</a>
-          <!--Github-->
-          <a href="https://github.com/victoriarahme" target="_blank"
-          class="contact-link">My Github</a>
-
+     <h4>Contact Me</h4>
+ 
+     <div class="contact-container">
+         <div class="links">
+             <a href="https://ca.linkedin.com/in/victoria-rahme-3817521a8" target="_blank" class="contact-link">My LinkedIn</a>
+             <a href="mailto:vic.rahme@gmail.com" target="_blank" class="contact-link">vic.rahme@gmail.com</a>
+             <a href="https://github.com/victoriarahme" target="_blank" class="contact-link">My Github</a>
+         </div>
+ 
+         <div class="forms">
+             <form id="contactForm" action="submit_form.php" method="POST">
+                 <label for="name"></label>
+                 <input type="text" id="name" name="name" placeholder="Name" required>
+ 
+                 <label for="email"></label>
+                 <input type="email" id="email" name="email" placeholder="Email" required>
+ 
+                 <label for="message"></label>
+                 <textarea id="message" name="message" placeholder="Message" required></textarea>
+ 
+                 <button type="submit">Submit</button>
+             </form>
+         </div>
      </div>
+ </section>
 
-     <div class="forms">
-        <form id="contactForm" action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            <div class="error-message" id="nameError"></div>
-
-
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Your email" required>
-            <div class="error-message" id="emailError"></div>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your message"required></textarea>
-            <div class="error-message" id="messageError"></div>
-
-            <button type="submit">Submit</button>
-        </form>
-     </div>
-</section>
 
 <!-- Footer Section -->
 <footer>
