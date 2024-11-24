@@ -21,3 +21,4 @@ if (linkText === "SHOW MORE") {
     });
 });
 
+//Step 3: validation
