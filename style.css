@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    padding-bottom: 100px;
+
+}
+
+
+header {
+    background-color: hsl(133, 30%, 58%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none; /* Removes bullet points from list */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Links in one row */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    margin: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px hsl(133, 30%, 58%);
+    position: relative;
+}
+
+h2 {
+    color:hsl(133, 30%, 58%);
+    font-size: 35px;
+}
+
+
+/* Project Section */
+.projects h3 {
+    font-size: 1.5rem;
+    color: hsl(133, 30%, 58%);
+    margin-bottom: 10px;
+}
+
+.showLess {
+    display: none; /* Hide the additional content initially */
+}
+
+.showMore a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: hsl(133, 30%, 58%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.showMore a:hover {
+    background-color: hsl(133, 40%, 60%);
+}
+
+h4{
+    color:hsl(133, 30%, 58%);
+    font-size: 40px;
+    margin: 0;
+    position:relative;
+    left: 1%;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%
+}
+
+.forms {
+    width: 500px;
+    padding: 20px;
+    font-weight: bolder;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-basis: 500px;
+    gap: 20px;
+}
+
+.forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.forms input,
+.forms textarea,
+.forms button {
+    border-radius: 5px;  /* Rounds the corners of individual form elements */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-link {
+    margin:20px 10px;
+    display: block;
+    padding: 10px;
+    background-color: hsl(133, 30%, 58%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: larger;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: hsl(133, 30%, 58%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .projects h3 {
+        font-size: 1.2rem;
+    }
+}
+
