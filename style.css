@@ -6,14 +6,12 @@ body {
     line-height: 1.6;
     padding-bottom: 100px;
     background-position: center;  /* Centers the background image */
-    background-repeat: no-repeat
-   
+    height: 2000px;
 
 }
 
-
 header {
-    background-color: hsl(180, 32%, 71%);
+    background-color: rgb(157, 205, 207);
     color: white;
     padding: 10px;
     text-align: center;
@@ -133,7 +131,7 @@ h4{
     margin:20px 10px;
     display: block;
     padding: 10px;
-    background-color: hsl(8, 9%, 64%);
+    background-color: rgb(183, 207, 207);
     color: white;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -143,13 +141,33 @@ h4{
     font-size: larger;
     width: 100%;
     text-decoration: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px hsl(180, 7%, 97%);
 }
+.contact-link:hover {
+    background-color: rgb(209, 209, 209); }
 
+.emailError {
+    display:none; 
+    color: red; 
+    font-size: 12px;
+}
+#emailError {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+.valid {
+    background-color: lightgreen; /* Green color for valid emails */
+}
+.invalid {
+    background-color: lightcoral; /* Red color for invalid emails */
+}
 
 
 /* Footer Styling */
 footer {
-    background-color: hsl(199, 29%, 66%);
+    background-color: rgb(182, 208, 207);
     color: white;
     text-align: center;
     padding: 10px;
@@ -157,6 +175,37 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
+    transition: background-color 0.4s ease;
+}
+    footer.scroll {
+        background: rgba(209, 209, 209, 1);
+}
+/*shades to add to gradient*/
+footer.scroll-1 {
+    background-color: rgb(197, 208, 208);  /* Lighter shade */
+}
+
+footer.scroll-2 {
+   background-color: rgb(213, 210, 209);
+}
+
+footer.scroll-3 {
+    background-color:rgb(227, 210, 207);
+}
+footer.scroll-4 {
+    background-color: rgb(231, 211, 210);
+}
+
+footer.scroll-5 {
+    background-color: rgb(239, 212, 209);
+}
+
+footer.scroll-6 {
+    background-color: rgb(222, 210, 208);
+}
+
+footer.scroll-7 {
+    background-color: rgb(186, 207, 206);
 }
 
 /* Mobile Styling */
