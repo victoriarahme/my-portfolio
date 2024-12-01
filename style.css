@@ -1,15 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    background-image: url('https://i.pinimg.com/736x/fd/c0/05/fdc005a61ebd16e6eefaefa8153c02f7.jpg');
+    background-size: cover;
+    font-family: 'PT', monospace;
     padding: 0;
     line-height: 1.6;
     padding-bottom: 100px;
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat
+   
 
 }
 
 
 header {
-    background-color: hsl(133, 30%, 58%);
+    background-color: hsl(180, 32%, 71%);
     color: white;
     padding: 10px;
     text-align: center;
@@ -41,14 +45,14 @@ nav ul li a:hover {
 section {
     padding: 40px;
     margin: 40px;
-    background-color: white;
+   /* background-color: white; */
     border-radius: 8px;
-    box-shadow: 0 0 10px hsl(133, 30%, 58%);
+    box-shadow: 0 0 10px hsl(180, 7%, 97%);
     position: relative;
 }
 
 h2 {
-    color:hsl(133, 30%, 58%);
+    color:hsl(0, 0%, 100%);
     font-size: 35px;
 }
 
@@ -56,7 +60,7 @@ h2 {
 /* Project Section */
 .projects h3 {
     font-size: 1.5rem;
-    color: hsl(133, 30%, 58%);
+    color: hsl(0, 0%, 97%);
     margin-bottom: 10px;
 }
 
@@ -68,7 +72,7 @@ h2 {
     display: inline-block;
     margin-top: 10px;
     padding: 10px;
-    background-color: hsl(133, 30%, 58%);
+    background-color: hsl(177, 17%, 77%);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -76,17 +80,18 @@ h2 {
 }
 
 .showMore a:hover {
-    background-color: hsl(133, 40%, 60%);
+    background-color: hsl(300, 3%, 75%);
 }
 
 h4{
-    color:hsl(133, 30%, 58%);
+    color:hsl(0, 0%, 95%);
     font-size: 40px;
     margin: 0;
     position:relative;
     left: 1%;
 }
 .contact-container {
+    
     display: flex;
     justify-content: space-between;
     gap: 90px;
@@ -103,7 +108,7 @@ h4{
     width: 500px;
     padding: 20px;
     font-weight: bolder;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     flex-basis: 500px;
     gap: 20px;
@@ -128,7 +133,7 @@ h4{
     margin:20px 10px;
     display: block;
     padding: 10px;
-    background-color: hsl(133, 30%, 58%);
+    background-color: hsl(8, 9%, 64%);
     color: white;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -139,12 +144,12 @@ h4{
     width: 100%;
     text-decoration: none;
 }
-
+`
 
 
 /* Footer Styling */
 footer {
-    background-color: hsl(133, 30%, 58%);
+    background-color: hsl(199, 29%, 66%);
     color: white;
     text-align: center;
     padding: 10px;
