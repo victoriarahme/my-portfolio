@@ -38,20 +38,23 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-
+#about {
+    box-shadow: 0 0 10px hsl(180, 7%, 97%);
+}
 /* Section Styling */
 section {
     padding: 40px;
     margin: 40px;
    /* background-color: white; */
     border-radius: 8px;
-    box-shadow: 0 0 10px hsl(180, 7%, 97%);
+   /* box-shadow: 0 0 10px hsl(180, 7%, 97%); */
     position: relative;
 }
 
 h2 {
     color:hsl(0, 0%, 100%);
     font-size: 35px;
+    text-align: center;
 }
 
 
@@ -61,6 +64,32 @@ h2 {
     color: hsl(0, 0%, 97%);
     margin-bottom: 10px;
 }
+
+.flex-container {
+    color: white;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+    
+}
+ .flex-proj1, .flex-proj2, .flex-proj3 {
+    box-shadow: 0 0 10px hsl(180, 7%, 97%);
+    padding: 40px;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    flex-direction: column;
+ }
+
 
 .showLess {
     display: none; /* Hide the additional content initially */
@@ -82,17 +111,25 @@ h2 {
 }
 
 h4{
-    color:hsl(0, 0%, 95%);
+    color:hsl(0, 100%, 100%);
     font-size: 40px;
     margin: 0;
     position:relative;
     left: 1%;
+    font-family: 'PT', monospace;
+    color: #ffffff;
+}
+
+.contact {
+    box-shadow: 0 0 10px hsl(180, 7%, 97%);
 }
 .contact-container {
     
     display: flex;
     justify-content: space-between;
     gap: 90px;
+    
+    
 }
 
 .links {
@@ -110,6 +147,9 @@ h4{
     border-radius: 10px;
     flex-basis: 500px;
     gap: 20px;
+    background-color: rgb(183, 207, 207);
+    box-shadow: 0 0 10px hsl(180, 7%, 97%);
+    font-family: 'PT', monospace;
 }
 
 .forms form {
@@ -125,6 +165,7 @@ h4{
     border-radius: 5px;  /* Rounds the corners of individual form elements */
     padding: 10px;
     border: 1px solid #ccc;
+    font-family: 'PT', monospace;
 }
 
 .contact-link {
@@ -136,7 +177,7 @@ h4{
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'PT', monospace;
     font-weight: 800;
     font-size: larger;
     width: 100%;
@@ -167,7 +208,7 @@ h4{
 
 /* Footer Styling */
 footer {
-    background-color: rgb(182, 208, 207);
+    background-color: rgb(182, 209, 207, 0.5);
     color: white;
     text-align: center;
     padding: 10px;
@@ -175,37 +216,37 @@ footer {
     width: 100%;
     bottom: 0;
     left: 0;
-    transition: background-color 0.4s ease;
+    transition: background-color 0.3s ease;
 }
     footer.scroll {
-        background: rgba(209, 209, 209, 1);
+        background: rgba(209, 209, 209, 1, 0.5);
 }
 /*shades to add to gradient*/
 footer.scroll-1 {
-    background-color: rgb(197, 208, 208);  /* Lighter shade */
+    background-color: rgba(197, 208, 208, 0.5);  /* Lighter shade */
 }
 
 footer.scroll-2 {
-   background-color: rgb(213, 210, 209);
+   background-color: rgba(213, 210, 209, 0.5);
 }
 
 footer.scroll-3 {
-    background-color:rgb(227, 210, 207);
+    background-color:rgba(227, 210, 209, 0.5);
 }
 footer.scroll-4 {
-    background-color: rgb(231, 211, 210);
+    background-color: rgba(231, 211, 210, 0.5);
 }
 
 footer.scroll-5 {
-    background-color: rgb(239, 212, 209);
+    background-color: rgba(226, 211, 210, 0.5);
 }
 
 footer.scroll-6 {
-    background-color: rgb(222, 210, 208);
+    background-color: rgba(239, 212, 209, 0.5);
 }
 
 footer.scroll-7 {
-    background-color: rgb(186, 207, 206);
+    background-color: rgba(186, 207, 206, 0.5);
 }
 
 /* Mobile Styling */

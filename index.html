@@ -21,7 +21,7 @@
 </header>
 
 <section id="about">
-     <h2>About Me</h2>
+     <h1>About Me</h1>
      <p>Welcome to my portfolio! My name's Victoria. I'm a 26 year old computer programming student at Humber Polytechnic. Ever since I was a teen, 
         I've been very curious about technology. I used to love playing around with html on Tumblr, and spent most of my time obsessed with computers. 
         I graduated with my first diploma in hospitality in 2019 and have been in the work force ever since. After coming to terms with my feelings of 
@@ -32,12 +32,12 @@
 
 <!-- Projects Section -->
 <section id="projects">
-     <h2>Projects</h2>
-
+     <h2>My projects</h2>
+<div class="flex-container">
      <!-- Project 1 -->
-     <div class="project">
-     <h3>CSS Project</h3>
-     <p>Here is a description of my CSS project.</p>
+     <div class="flex-proj1">
+     <h3>HTML and CSS</h3>
+     <p></p>
 
     <!-- Show More Button -->
      <div class="showLess">
@@ -49,10 +49,10 @@
 </div>
 
     <!-- Project 2 -->
-     <div class="project">
-        <h3>JavaScript Project</h3>
-         <p>Here is a description of my JavaScript project.</p>
-
+     <div class="flex-proj2">
+        <h3>JavaScript</h3>
+         <p></p>
+     
     <!-- Show More Button -->
          <div class="showLess">
         <p>Further project info/details will be added here in future.</p>
@@ -63,9 +63,9 @@
      </div>
 
         <!-- Project 3 -->
-        <div class="project">
-        <h3>Web design, JS and Jquery Project</h3>
-         <p>Here is a description of my project.</p>
+        <div class="flex-proj3">
+        <h3>Jquery</h3>
+         <p></p>
 
          <!-- Show More Button -->
          <div class="showLess">
@@ -74,8 +74,8 @@
          <div class="showMore">
          <a href="#">Show more</a>
      </div>
-     </div>
-
+</div>
+</div>
 </section>
 
 <section id="contact">
@@ -94,8 +94,9 @@
                  <input type="text" id="name" name="name" placeholder="Name" required>
  
                  <label for="email"></label>
-                 <input type="email" id="email" name="email" placeholder="Email" required>
- 
+                 <input type="text" id="email" name="email" placeholder="Email" onblur="validateEmail()" required>
+                 <span id="emailError">Invalid email address. Make sure address contains '@' and '.'</span>
+
                  <label for="message"></label>
                  <textarea id="message" name="message" placeholder="Message" required></textarea>
  
