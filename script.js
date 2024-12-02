@@ -5,7 +5,7 @@ $(document).ready(function() {
         e.preventDefault(); // stops link redirecting
 
         var $this = $(this);
-        var $content = $this.closest(".flex-container").find(".showLess");
+        var $content = $this.closest(".flex-proj1, .flex-proj2, .flex-proj3").find(".showLess");
 
         var linkText = $this.text().toUpperCase();
 
