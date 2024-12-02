@@ -40,6 +40,7 @@ nav ul li a:hover {
 }
 #about {
     box-shadow: 0 0 10px hsl(180, 7%, 97%);
+    color:#ffffff;
 }
 /* Section Styling */
 section {
@@ -88,11 +89,14 @@ h2 {
     align-items: center;
     height: 150px;
     flex-direction: column;
+    position: relative;
+    height: auto;
  }
 
 
 .showLess {
     display: none; /* Hide the additional content initially */
+    overflow: hidden;
 }
 
 .showMore a {
@@ -104,6 +108,7 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .showMore a:hover {
