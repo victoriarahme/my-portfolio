@@ -15,10 +15,15 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
+    display: flex;
+}
+
+h9{
+    font-size: 60px;
+    font-weight: bold;
 }
 #welcome {
     color: white;
-    
 }
 
 /* Navigation Bar */
@@ -41,6 +46,20 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+
+}
+
+#mylink {
+    color:#ffffff;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: hsl(177, 17%, 77%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 #about {
     box-shadow: 0 0 10px hsl(180, 7%, 97%);
