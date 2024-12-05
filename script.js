@@ -11,8 +11,11 @@ $(document).ready(function() {
 
 //Togglin here//
 if (linkText === "SHOW MORE") 
-{ linkText = "Show less"; $content.slideDown(); //to open up my project details 
-} else { linkText = "Show more"; $content.slideUp(); //closes project info/details
+{ linkText = "Show less"; 
+  $content.stop(true, true).slideDown(); //to open up my project details 
+} else { 
+    linkText = "Show more"; 
+    $content.stop(true, true).slideUp(); //closes project info/details
     }
 $this.text(linkText); });});
 
@@ -51,7 +54,7 @@ function validateEmail () {
                 footer.classList.add("scroll-7"); // Add lightest color when scroll position > 1400px
                 console.log("Scroll class scroll-7 added"); 
            
-            }else if (scrollPosition > 1200){
+            }else if (scrollPosition > 1200){ // scrolled more than 1200px
                 footer.classList.add("scroll-6");
                 console.log("Scroll class scroll-6 added");
            
@@ -63,7 +66,7 @@ function validateEmail () {
                 footer.classList.add("scroll-4");
                 console.log("Scroll class scroll-4 added");
            
-            }else if (scrollPosition > 500){
+            }else if (scrollPosition > 500){ //scrolled more than 500px
                 footer.classList.add("scroll-3");
                 console.log("Scroll class scroll-3 added");
            
